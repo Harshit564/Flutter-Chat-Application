@@ -1,7 +1,7 @@
+import 'package:Flutter_Chat_Application/home.dart';
 import 'package:flutter/material.dart';
 
 import 'const.dart';
-import 'login.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,8 +13,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: themeColor,
       ),
-      home: LoginScreen(title: 'CHAT DEMO'),
+      home: HomePage(),
       debugShowCheckedModeBanner: false,
+
     );
   }
 }
