@@ -1,6 +1,5 @@
 import 'dart:async';
 
-import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:Flutter_Chat_Application/home.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -35,12 +34,13 @@ class PostBlogPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
+      debugShowCheckedModeBanner: false,
       routes: <String, WidgetBuilder>{
         "/home": (BuildContext context) => new HomePage(),
       },
       home: new Scaffold(
           appBar: new AppBar(
-            title: new Text('Post Blog..'),
+            title: new Text('Add Question'),
           ),
           body: new _PostPage()),
     );
@@ -87,7 +87,7 @@ class _PostPageState extends State<_PostPage> {
                     });
                   },
                   decoration: new InputDecoration.collapsed(
-                    hintText: "Title",
+                    hintText: "Question",
                     border: new UnderlineInputBorder(
                       borderSide: const BorderSide(
                           color: Colors.blueAccent,
@@ -108,7 +108,7 @@ class _PostPageState extends State<_PostPage> {
                     });
                   },
                   decoration: new InputDecoration.collapsed(
-                    hintText: "Description",
+                    hintText: "Question Description",
                     border: new UnderlineInputBorder(
                       borderSide: const BorderSide(
                           color: Colors.blueAccent,

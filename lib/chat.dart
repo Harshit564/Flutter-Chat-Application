@@ -16,7 +16,10 @@ final reference = FirebaseDatabase.instance.reference().child('chat');
 class ChatPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(title: "Chat", home: new ChatScreen());
+    return new MaterialApp(
+        title: "Chat",
+        debugShowCheckedModeBanner: false,
+        home: new ChatScreen());
   }
 }
 

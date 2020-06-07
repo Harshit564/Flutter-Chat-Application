@@ -100,7 +100,7 @@ class HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     Scaffold homeScaffold = new Scaffold(
         appBar: new AppBar(
-          title: new Text("Simple Blog App"),
+          title: new Text("Discussion Forum"),
           actions: <Widget>[
             new Builder(builder: (context) {
               return new IconButton(

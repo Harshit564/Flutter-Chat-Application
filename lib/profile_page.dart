@@ -36,6 +36,7 @@ class ProfilePageState extends State<ProfilePage> {
 //   print(useremail);
 //   print(userphotourl);
     return new MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: new Scaffold(
         appBar: new AppBar(
           title: new Text("Profile"),

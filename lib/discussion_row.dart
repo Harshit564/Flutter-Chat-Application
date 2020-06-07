@@ -1,3 +1,4 @@
+import 'package:Flutter_Chat_Application/chat.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:transparent_image/transparent_image.dart';
