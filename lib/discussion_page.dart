@@ -147,8 +147,8 @@ class _PostPageState extends State<_PostPage> {
     });
     await _ensureLoggedIn();
 
-    StorageReference ref = FirebaseStorage.instance.ref().child("Blog_Images/" +
-        new DateTime.now().millisecondsSinceEpoch.toString()); //new
+//    StorageReference ref = FirebaseStorage.instance.ref().child("Blog_Images/" +
+//        new DateTime.now().millisecondsSinceEpoch.toString()); //new
     _addBlog(title, desc);
   }
 

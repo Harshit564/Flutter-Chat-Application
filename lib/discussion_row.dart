@@ -22,12 +22,6 @@ class BlogRow extends StatelessWidget {
           child: new Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              new FadeInImage.memoryNetwork(
-                placeholder: kTransparentImage,
-                image: snapshot.value['IMAGE'],
-                alignment: Alignment.topCenter,
-                fit: BoxFit.contain,
-              ),
 //            new Image.network(snapshot.value['IMAGE']),
               new Padding(
                 padding: const EdgeInsets.fromLTRB(8.0, 8.0, 0.0, 0.0),
